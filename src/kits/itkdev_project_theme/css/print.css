@@ -1,0 +1,18 @@
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* All your print styles go here */
+  #admin-toolbar,
+  .admin-toolbar-control-bar,
+  .btn,
+  .btn-primary {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+  }
+}
