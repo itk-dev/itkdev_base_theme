@@ -1,5 +1,11 @@
 # ITK Dev Frontend Theme for Drupal
 
+## Create a custom theme from the starterkit
+
+```shell name"build-custom-theme"
+itkdev-docker-compose exec phpfpm php /app/web/core/scripts/drupal generate-theme itkdev_project_theme --name="ITKdev project theme" --path="themes/custom" --starterkit=starterkit_project_theme
+```
+
 ## Build assets
 
 Run the command below to install assest and tools from package.json

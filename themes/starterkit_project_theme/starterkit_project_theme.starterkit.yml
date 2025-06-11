@@ -1,0 +1,10 @@
+ignore:
+  - '/starterkit_project_theme.starterkit.yml'
+no_edit: []
+no_rename: []
+info:
+  version: 1.0.0
+starterkit:
+  replace_patterns:
+    - 'itkdev_project_theme'
+

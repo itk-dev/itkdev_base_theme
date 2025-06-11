@@ -1,4 +1,4 @@
-# ITK-Dev Project Theme for Drupal
+# starterkit_project_theme for Drupal
 
 This theme is for the project specific styles and templates.
 Basic components are provided from the ITK-dev base theme.

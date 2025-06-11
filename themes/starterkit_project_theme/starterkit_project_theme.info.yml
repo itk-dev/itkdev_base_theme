@@ -1,9 +1,10 @@
-name: ITK-dev Project Theme
+name: starterkit_project_theme
 type: theme
+version: VERSION
 description: "Project theme"
 package: itkdev
-starterkit: true
-base theme: itkdev_base_theme
+hidden: true
+'base theme': itkdev_base_theme
 core_version_requirement: ^11
 regions:
   header: Header
