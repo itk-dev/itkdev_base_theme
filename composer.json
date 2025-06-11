@@ -1,5 +1,5 @@
 {
-  "name": "itk-dev/base-theme",
+  "name": "itk-dev/itkdev-base-theme",
   "description": "A base theme using tailwind. Includes a starterkit theme to match",
   "type": "drupal-theme",
   "license": "GPL-2.0-or-later",
