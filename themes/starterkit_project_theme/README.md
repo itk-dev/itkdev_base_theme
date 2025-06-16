@@ -5,7 +5,7 @@ Basic components are provided from the ITK-dev base theme.
 
 ## Templates
 
-Add your custom templates and override templates in the `Templates` folder.
+Add your custom templates and override templates in a `templates` folder.
 
 ## Styling
 
@@ -14,7 +14,7 @@ This will automatically be included when assets are built.
 
 ## Images
 
-Place images in the `assets/images` folder.
+Place images in an `assets/images` folder.
 
 ## Scripts
 
@@ -33,7 +33,7 @@ Images you should consider adding in the theme
 
 ## Usage
 
-Add a .npmrc file to the theme containg the font awesome auth token as described here:
+Add a .npmrc file to the theme containing the font awesome auth token as described here:
 https://docs.fontawesome.com/web/setup/packages#project-specific-using-configuration-files
 
 Install the node packages
@@ -48,7 +48,7 @@ Run the command below to build assets once. This includes the base theme styles 
 docker compose run --rm node yarn --cwd /app/web/themes/custom/starterkit_project_theme build
 ```
 
-Run the command below to continuesly build assets upon file changes.
+Run the command below to continuously build assets upon file changes.
 
 ```shell name"assets-watch"
 docker compose run --rm node yarn --cwd /app/web/themes/custom/starterkit_project_theme watch
