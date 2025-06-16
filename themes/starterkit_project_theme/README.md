@@ -33,6 +33,9 @@ Images you should consider adding in the theme
 
 ## Usage
 
+Add a .npmrc file to the theme containg the font awesome auth token as described here:
+https://docs.fontawesome.com/web/setup/packages#project-specific-using-configuration-files
+
 Install the node packages
 
 ```shell name="install"
