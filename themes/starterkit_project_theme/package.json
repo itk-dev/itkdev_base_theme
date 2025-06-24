@@ -27,17 +27,17 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "coding-standards-check/eslint": "yarn eslint './js/**/*.js'",
-    "coding-standards-check/prettier": "yarn prettier ./js/**/ --check",
+    "coding-standards-check/eslint": "yarn eslint './assets/js/**/*.js'",
+    "coding-standards-check/prettier": "yarn prettier ./assets/js/**/ --check",
     "coding-standards-check": "yarn coding-standards-check/prettier && yarn coding-standards-check/eslint",
-    "coding-standards-apply/eslint": "yarn eslint './js/**/*.js' --fix",
-    "coding-standards-apply/prettier": "yarn prettier ./js/**/ --write",
+    "coding-standards-apply/eslint": "yarn eslint './assets/js/**/*.js' --fix",
+    "coding-standards-apply/prettier": "yarn prettier ./assets/js/**/ --write",
     "coding-standards-apply": "yarn coding-standards-apply/prettier && yarn coding-standards-apply/eslint",
     "build:encore": "yarn encore production --progress",
-    "build:tailwind": "yarn tailwindcss -i css/styles.css -o css/styles.dist.css --minify",
+    "build:tailwind": "yarn tailwindcss -i assets/css/styles.css -o assets/css/tailwind.compilation.css",
     "build": "yarn build:tailwind && yarn build:encore",
     "watch:encore": "yarn encore dev --watch",
-    "watch:tailwind": "yarn tailwindcss -i css/styles.css -o css/styles.dist.css --watch",
+    "watch:tailwind": "yarn tailwindcss -i assets/css/styles.css -o assets/css/tailwind.compilation.css --watch",
     "watch": "concurrently \"yarn watch:tailwind\" \"yarn watch:encore\" "
   },
   "dependencies": {

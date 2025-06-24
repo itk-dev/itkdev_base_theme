@@ -5,8 +5,7 @@ const Encore = require("@symfony/webpack-encore");
 
 Encore.setOutputPath("build/")
   .setPublicPath("/build")
-  .addEntry("app", "./app.js")
-  .cleanupOutputBeforeBuild()
+  .addEntry("app", "./assets/js/app.js")
   .enableSingleRuntimeChunk();
 
 module.exports = Encore.getWebpackConfig();

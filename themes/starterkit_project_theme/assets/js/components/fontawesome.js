@@ -1,33 +1,18 @@
+// Import icon names from the base theme
+import {
+  baseFaBrandIcons,
+  baseFaSolidIcons,
+  baseFaRegularIcons,
+  baseFaProRegularIcons,
+} from "../../../../../contrib/itkdev_base_theme/js/baseIcons.js";
+
 // Import icon names from the project theme
 import {
   projectFaBrandIcons,
   projectFaSolidIcons,
   projectFaRegularIcons,
   projectFaProRegularIcons,
-} from "../../itkdev_project_theme/js/project-icons.js";
-
-// Create arrays with the icon names and add additional icons
-const projectFaBrandCustomIconsList = [...projectFaBrandIcons, "faXTwitter"];
-const projectFaSolidCustomIconsList = [
-  ...projectFaSolidIcons,
-  "faBars",
-  "faXmark",
-  "faSun",
-  "faMoon",
-  "faMagnifyingGlass",
-  "faAngleDown",
-  "faUser",
-  "faSignOut",
-];
-const projectFaRegularCustomIconsList = [
-  ...projectFaRegularIcons,
-  "faWindowClose",
-];
-
-const projectFaProRegularCustomIconsList = [
-  ...projectFaProRegularIcons,
-  "faCircleInfo"
-];
+} from "./project-icons.js";
 
 // Import the svg core
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
@@ -38,20 +23,26 @@ import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 import * as regularIcons from "@fortawesome/free-regular-svg-icons";
 import * as proRegularIcons from "@fortawesome/pro-regular-svg-icons";
 
+// Create arrays with the icon names and add additional icons
+const faBrandCustomIconsList = [...projectFaBrandIcons, ...baseFaBrandIcons];
+const faSolidCustomIconsList = [...projectFaSolidIcons, ...baseFaSolidIcons];
+const faRegularCustomIconsList = [...projectFaRegularIcons, ...baseFaRegularIcons];
+const faProRegularCustomIconsList = [...projectFaProRegularIcons, ...baseFaProRegularIcons];
+
 // Get specific icons based on the lists
-const selectedBrandIcons = projectFaBrandCustomIconsList
+const selectedBrandIcons = faBrandCustomIconsList
   .map((iconName) => brandIcons[iconName])
   .filter((icon) => icon !== undefined);
 
-const selectedSolidIcons = projectFaSolidCustomIconsList
+const selectedSolidIcons = faSolidCustomIconsList
   .map((iconName) => solidIcons[iconName])
   .filter((icon) => icon !== undefined);
 
-const selectedRegularIcons = projectFaRegularCustomIconsList
+const selectedRegularIcons = faRegularCustomIconsList
   .map((iconName) => regularIcons[iconName])
   .filter((icon) => icon !== undefined);
 
-const selectedProRegularIcons = projectFaProRegularCustomIconsList
+const selectedProRegularIcons = faProRegularCustomIconsList
   .map((iconName) => proRegularIcons[iconName])
   .filter((icon) => icon !== undefined);
 

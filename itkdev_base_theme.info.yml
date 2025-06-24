@@ -4,8 +4,6 @@ description: "Default base theme"
 package: itkdev
 base theme: false
 core_version_requirement: ^11
-libraries:
-  - itkdev_base_theme/styles
 hidden: true
 regions:
   header: Header

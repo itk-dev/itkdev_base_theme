@@ -1,3 +1,7 @@
+/**
+ * Print styling.
+ */
+
 @media print {
   * {
     -webkit-print-color-adjust: exact;
