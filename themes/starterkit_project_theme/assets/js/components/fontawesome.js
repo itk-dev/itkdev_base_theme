@@ -26,8 +26,14 @@ import * as proRegularIcons from "@fortawesome/pro-regular-svg-icons";
 // Create arrays with the icon names and add additional icons
 const faBrandCustomIconsList = [...projectFaBrandIcons, ...baseFaBrandIcons];
 const faSolidCustomIconsList = [...projectFaSolidIcons, ...baseFaSolidIcons];
-const faRegularCustomIconsList = [...projectFaRegularIcons, ...baseFaRegularIcons];
-const faProRegularCustomIconsList = [...projectFaProRegularIcons, ...baseFaProRegularIcons];
+const faRegularCustomIconsList = [
+  ...projectFaRegularIcons,
+  ...baseFaRegularIcons,
+];
+const faProRegularCustomIconsList = [
+  ...projectFaProRegularIcons,
+  ...baseFaProRegularIcons,
+];
 
 // Get specific icons based on the lists
 const selectedBrandIcons = faBrandCustomIconsList

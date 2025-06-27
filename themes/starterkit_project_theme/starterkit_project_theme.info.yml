@@ -1,10 +1,10 @@
-name: starterkit_project_theme
+name: "starterkit_project_theme"
 type: theme
 version: VERSION
 description: "Project theme"
 package: itkdev
 hidden: true
-'base theme': itkdev_base_theme
+"base theme": itkdev_base_theme
 core_version_requirement: ^11
 regions:
   header: Header
@@ -12,4 +12,4 @@ regions:
   content: Content
   footer: Footer
 libraries:
-  - starterkit_project_theme/styles
+  - "starterkit_project_theme/styles"
