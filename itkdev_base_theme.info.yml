@@ -1,0 +1,12 @@
+name: ITK-dev base theme
+type: theme
+description: "Default base theme"
+package: itkdev
+base theme: false
+core_version_requirement: ^11
+hidden: true
+regions:
+  header: Header
+  navigation: Navigation
+  content: Content
+  footer: Footer

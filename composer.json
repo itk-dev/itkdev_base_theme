@@ -1,0 +1,22 @@
+{
+  "name": "itk-dev/itkdev_base_theme",
+  "description": "A base theme using tailwind. Includes a starterkit theme to match",
+  "type": "drupal-theme",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Martin Yde",
+      "email": "my@aarhus.dk",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Jesper Pedersen",
+      "email": "pejes@aarhus.dk",
+      "role": "Maintainer"
+    }
+  ],
+  "require-dev": {
+    "drush/drush": "^13"
+  }
+}
